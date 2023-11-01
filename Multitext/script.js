@@ -1,10 +1,9 @@
 
+// alert("ka");
 
-alert("this sucks");
-
-// // MULTITEXT
-let typingEffect = new Typed (".multiText",{
-    strings:["Coder","Leon","Showman","entertainer"],
+// MULTITEXT
+var typingEffect = new Typed (".multiText",{
+    strings:["Leon","Coder","Showman","entertainer"],
     loop: true,
     typeSpeed: 200,
     backSpeed: 300,
