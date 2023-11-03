@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(media/background2.jpg);
+    /* background: grey; */
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2em;
+    color: blueviolet;
+    pointer-events: none;
+    margin-right: 230px;
+
+}
+
+.navigation a{
+    text-decoration: none;
+    color: blueviolet;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+
+}
+
+.navigation a:hover,
+.navigation a.active{
+    background: blueviolet;
+    color: #fff;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: blueviolet;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+
+.parallax .left{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    /* width: 100%; */
+    pointer-events: none;
+    height: 100%;
+}  
+
+.parallax .textbox{
+    height: 200px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    pointer-events: none;
+    background-color: green;
+}
+.parallax .right{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    height: 100%;
+    pointer-events: none;
+    
+}
+
+.sec{
+    position: relative;
+    background: #003329;
+    padding: 100px;
+    height: 100vh;
+}
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+}
