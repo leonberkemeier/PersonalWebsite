@@ -1,0 +1,33 @@
+const toggle = document.getElementById('toggleDark');
+const body = document.querySelector('body');
+
+toggle.addEventListener('click', function(){
+    this.classList.toggle('bi-moon');
+    if(this.classList.toggle('bi-brightness-high-fill')){
+        body.style.background = 'white';
+        body.style.color = 'black';
+        body.style.transition = '1s';
+    }else{
+        body.style.background = 'rgb(23, 23, 23)';
+        body.style.color = 'white';
+        body.style.transition = '1s';
+    }
+});
+
+const toggleArrow = document.getElementById('toggleArrow');
+
+toggleArrow.addEventListener('click', function(){
+    this.classList.toggle('bi-arrow-up');
+});
+
+
+const chevron = document.querySelector('.bi-arrow-down');
+const toggleChevron = document.getElementById('progress-name');
+
+toggleChevron.addEventListener('click', function(){
+    this.classList.toggle('bi-chevron-compact-up');
+    chevron.classList.toggle('rotate');
+    alert('in eed help');
+    // chevron.classList.add('hidden');
+});
+
