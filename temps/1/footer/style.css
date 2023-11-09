@@ -300,6 +300,7 @@ footer ul li a:hover{
 .links a:hover{
     color: #4d4f55;
     background-color: var(--lighter-color);
+    rotate: 360deg;
 }
 @media screen and (max-width:740px){
     .footer-col{
@@ -316,4 +317,6 @@ footer ul li a:hover{
         width: 100%;
     }
 }
+
+
 
