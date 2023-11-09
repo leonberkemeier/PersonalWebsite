@@ -517,12 +517,3 @@ span{
     transform: rotate(180deg);
 }
 
-/* hover effect */
-.skills .grid .skillsItem::before{
-    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(240, 239, 239, 0.6), transparent 40%   );
-    z-index: 3;
-}
-.card > .card-border{
-    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(229, 228, 228, 0.5), transparent 40%   );  
-    z-index: 1;
-}
