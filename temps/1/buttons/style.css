@@ -202,3 +202,95 @@ body{
     
 }
 
+
+.view{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+
+}
+
+/*  --- about sesction ---- */
+
+.main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.main h2{
+    font-size: 3.5vw;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    display: inline-block;
+    
+}
+span{
+    color: var(--title-color);
+}
+.main h2:before{
+    position: absolute;
+    content: '';
+    background: var(--title-color);
+    height: 3px;
+    width: 50%;
+    right: -25px;
+    bottom: 0;
+    border-radius: 50px;
+}
+
+
+
+/*------------- icons --------------- */
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    right: -16.5vw;
+    transform: translateY(-50%);
+    color: rgb(202, 197, 197);
+}
+.icon-link{
+    color: rgb(202, 197, 197);
+    text-decoration: none;
+    margin: 20px;
+    /* background: blue; */
+}
+.icons .fa{
+    width: 20vw;
+    padding: 1vw;
+    font-size: 2.0vw;
+    cursor: pointer;
+    background: var(--title-color);
+    transition: .5s ease;
+    margin: .5vw;
+    border-radius: 1.5vw;
+
+}
+.icons .fa:hover,
+.icon-link:hover{
+    color: #fff;
+    background: var(--lighter-color);
+    transform: translateX(-13vw);
+    /* background: rgb(127, 0, 255); */
+    /* background-color: blue; */
+    
+}
+
+.icons .fa span{
+    position: relative;
+    font-size: 1.8vw;
+    bottom: 1.2vw;
+    margin-left: 1.8vw;
+    margin-top: 1.5vw;
+    
+}
+.button-icon{
+    transition: 1s;
+}
+
+.rotate{
+    rotate: 360deg;
+}
