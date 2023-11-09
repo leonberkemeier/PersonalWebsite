@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alles</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+           
+            <div class="nav__logo">
+                <a href="#" class="nav__logo1"><h1 data-value="Leon">Leon</h1></a>
+            </div>
+       
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            home
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            projects                        
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            skills 
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#photography" class="nav__link">
+                            photography                 
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__buttons">
+                    <a href="#connect" class="nav__button-ghost">Lets Connect</a>
+                </div>
+                <!-- closebtn -->
+                <div class="nav__close" id="nav-close">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+            </div>
+            <!-- toggle btn -->
+            <div class="nav__toggle" id="nav-toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+           
+        </nav>
+
+        
+        
+    </header>
+    
+
+   
+
+    <section class="home view" id="home">
+   
+        <div class="highlights">
+
+            <div class="cols cols0" id="cols0">
+                <div class="textbox" id="textbox">
+                    <span class="topline">Hey</span>
+                    <br>
+                    <h1>I'm <span class="multiText">Leon</span></h1>
+                    <br>
+                    <br>
+                    <p> I am currently studying chemistry and chemical engineering and I really like to write some code and take some pictures im my freetime.</p>    
+                </div>
+                
+            </div>
+                       
+            <div class="cols cols1" id="cols1">
+                <div class="imgbox" id="imgbox">
+                    <img class="splash" src="images/splash3.png" id="splash">
+                    <img class="profile" src="images/img4.png">
+                    <!-- splashes -->
+                    <!-- https://www.pngall.com/de/paint-splash-png -->
+                </div>
+            </div>
+            
+            <div class="btns" id="btns">
+                <a href="cv.pdf"><button>download cV</button></a>            
+                <button>lets connect</button>
+            </div>
+
+        </div>    
+        
+    <div class="banner"></div>
+       
+    </section>
+
+    <!-- ------- section projects ---------- -->
+
+    <section class="projects view" id="projects">
+        <div class="main">
+            <h2 data-value="My Projects"><span>My</span> Project<span>s</span></h2>
+            <h6>In the following I want to give the Reader a list of Projects I finished.</h6>
+        </div>
+        <div class="content">
+            
+            <div class="cols">
+                <ul class="project__list">
+
+                    <li class="project_list_item">
+                        <p><b>My</b> first project was a basic to-do-list, which was designed to be a Mischung aus shopping und to-do-list.</p>
+                        <button class="show-modal">view my first project</button> 
+                    </li>
+
+                    <li class="project_list_item">
+                        <p><b>The</b> second project was a flash-card-style web application in which you were supposed to be able to create projects and to upload flash-cards ment for learning new skills. Additionally I added a document-scanner using CV2.</p>
+                        <button class="show-modal1">view my second project</button> 
+                    </li>
+
+                    <li class="project_list_item">
+                        <p><b>Third</b> project was a Web-Scraping tool in which I used Scrapy. It was to yield prices and if a big Sale was to send me an Email.</p>
+                        <button class="show-modal2">view my third project</button> 
+                    </li>
+
+                    <li class="project_list_item">
+                        <p><b>Fourth</b> was this website in which I wanted to display my skill, projects and combine all past projects into one big project.</p>
+                        <button class="show-modal3">view my fourth project</button>  
+                    </li>
+                </ul>
+
+                <!-- <div class="project">
+                    <p><b>M</b>y first project was a basic to-do-list, which was designed to be a Mischung aus shopping und to-do-list.</p>
+                    <a href="#">mehr</a>    
+                </div>
+
+                <div class="project">
+                    <p><b>T</b>he second project was a flash-card-style web application in which you were supposed to be able to create projects and to upload flash-cards ment for learning new skills.</p>
+                    <a href="#">mehr</a>    
+                </div> -->
+
+            </div>
+            <div class="cols">
+                <div class="box">
+                    
+                    <img src="images/img99.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <h1>This is Project 0</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+            </p>
+            <br>
+            <a href="">link to project</a>
+          </div>
+    
+        <div class="modal1 hidden">
+          <button class="close-modal1">&times;</button>
+          <h1>This is Project 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+          </p>
+          <a href="">link to project</a>
+        </div>
+        <div class="modal2 hidden">
+          <button class="close-modal2">&times;</button>
+          <h1>This is Project 2</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+          </p>
+          <a href="">link to project</a>
+        </div>
+        <div class="modal3 hidden">
+          <button class="close-modal3">&times;</button>
+          <h1>This is Project 3</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+          </p>
+        </div>  
+    
+        <div class="overlay hidden"></div>
+    </section>
+
+
+    <!-- ---- section skills ---- -->
+
+    <section class="skills views" id="skills">
+        
+        <div class="main">
+            <h2 data-value="My Skills">My Skills</h2>
+            <h6>Here I want to show <span>you</span> some <span>Skills</span> I aquired over time and some <span>courses</span> I took.</h6>
+        </div>
+
+        <div class="progressBoxs grid">
+<!-- skills -->
+            <div class="grid_skills" id="grid_skills">
+
+                <h1>Skills</h1>
+                
+                <div class="skillsItem">
+                    <button type="button" class="collapsible" id="the-button0">
+                        <div class="progress_name">
+                            <span>HTML</span>
+                            <span>90% <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+    
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 90%;"></div>
+                        </div>
+                    </button>
+                    
+                    <div class="content">
+                        <h4><p> HTML bestimmt den strukturellen Aufbau einer Internetseit.</p></h4>
+                        <p> Da in jedem meiner Projecte mit HTML gearbeitet wurde, wurde ein guter Einblick in und ein gutes Verstaendniss fuer HTML erhalten. </p>
+                    </div>
+                </div>
+                
+                <div class="skillsItem">
+                    <button type="button" class="collapsible" id="the-button1">
+                        <div class="progress_name">
+                            <span>CSS</span>
+                            <span>80% <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+    
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 80%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4><p>CSS ist eine Formatierungssprache, welche vorallem fuer HTML-, SVG-, und XML-Dokumente verwendet wird.</p></h4>
+                        <p>Da in jedem meiner Projekte mit CSS gearbeitet wurde, wurde ein gutes Verstaendnis fuer CSS erarbeitet und ein gutes Gefuehl fuer die Anwendung von CSS erarbeitet.</p>
+                    </div>
+                </div>
+                
+                <div class="skillsItem">
+                    <button type="button" class="collapsible" id="the-button2">
+                        <div class="progress_name">
+                            <span>SQLite</span>
+                            <span>40% <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+    
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 40%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4><p>SQLite ist eine gemeinfreie Programmbibliothek, die ein relationales Datenbanksystem enthält.</p></h4>
+                        <p>Mit dem ersten Project wurde ein grober Ueberblick erhalten, welcher vorallem mit dem Implementieren des Scrapers immer wieder verfeinert und ausgearbeitet wurde.</p>
+                    </div>
+    
+                </div>
+                
+                <div class="skillsItem">
+                    <button type="button" class="collapsible" id="the-button3">
+                        <div class="progress_name">
+                            <span>Python</span>
+                            <span>75% <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+    
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 74%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4><p>Python ist eine universelle, üblicherweise interpretierte, höhere Programmiersprache.</p></h4>
+                        <p>Da das gesamte Backend meiner Website als auch weiterer Projecte mit dem Python-Framework Django erstellt wurde, ist im Verlaufe ein sehr gutes Gefuehl fuer den Umgang mit Python (und Django) erhalten worden.</p>
+                    </div>
+                </div>
+                
+                <div class="skillsItem">
+                    <button type="button" class="collapsible" id="the-button4">
+                        <div class="progress_name">
+                            <span>JavaScript</span>
+                            <span>10% <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+    
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 10%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4><p>JavaScript ist eine Skriptsprache, welche für dynamisches HTML in Webbrowsern entwickelt wurde.</p></h4>
+                        <p>JavaScript eignet sich sehr gut um nhalte zu verändern, nachzuladen oder zu generieren. Vorallem bei dem Erstellen meiner persönlichen Website wurde viel mit JavaScript	gearbeitet und ein gutes Verständnis für die Skripsprache erhalten. (siehe Auch Kurse um den abgeschlossenen 70 stuendigen Kurs zu sehen).</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+<!-- courses -->
+            <div class="grid_courses">
+
+                <h1>Courses</h1>
+
+                <div class="courseItem">
+                    <button type="button" class="collapsible" id="the-button5">
+                        <div class="progress_name">
+                            <span>The Complete JavaScript Course 2023!</span>
+                            <span>35% <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+    
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 40%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4>The modern JavaScript course for everyone!</h4>
+                        <p> Master JavaScript with projects, challenges and theory. Many courses in one!</p>
+                        <p>Level: All Level</p>
+                        <p>Video: 68.5 h</p>
+                    </div>
+                </div>
+
+
+                <div class="courseItem">
+                    <button type="button" class="collapsible" id="the-button6">
+                        <div class="progress_name">
+                            <span>Beginning C++ Programming</span>
+                            <span>10% <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+    
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 10%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4>Which programming language is often seen as a badge of honor among software developers? <br> C++</h4>
+                        <p>Obtain Modern C++ Object-Oriented Programming (OOP) and STL skills. C++14 and C++17 covered. C++20 info see below.</p>
+                        <p>Level: All Level</p>
+                        <p>Video: 46 h</p>
+                    </div>
+                </div>
+
+                
+                <div class="courseItem">
+                    <button type="button" class="collapsible" id="the-button7">
+                        <div class="progress_name">
+                            <span>Full Ethical Hacking Course</span>
+                            <span>100%  <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 98%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4>Learn all about ethical hacking and penetration testing.</h4>
+                        <p>Video: 15h</p>
+                        <a href="../../FullEthicalHackingCourseI.pdf"></a>
+                    </div>
+                </div>
+                
+                <div class="courseItem">
+                    <button type="button" class="collapsible" id="the-button8">
+                        <div class="progress_name">
+                            <span>Learn Ethical Hacking From Scratch</span>
+                            <span>12%  <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 12%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4>Become an ethical hacker that can hack computer systems like black hat hackers and secure them like security experts</h4>
+                        <p>Video: 16 h</p>
+                    </div>
+                </div>
+
+                
+                <div class="courseItem">
+                    <button type="button" class="collapsible" id="the-button9">
+                        <div class="progress_name">
+                            <span>Full Web Ethical Hacking Course</span>
+                            <span>75%  <ion-icon class="chevron-down"  name="chevron-down-outline"></ion-icon></span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 76%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4>Full Web Ethical Hacking Course</h4>
+                        <p>Learn all about web application penetration testing!</p>
+                    </div>
+                </div>
+                
+            </div>            
+        </div>
+
+        <div class="banner2"></div>
+    </section>
+
+
+
+<!-- ==== section Photography ==== -->
+
+    <section class="photography view" id="photography">
+        <div class="main">
+            <h2 data-value="Photography"><span>P</span>hotograph<span>y</span></h2>
+            <h6>For the last one is just sum pictures i took.</h6>
+        </div>
+
+         <!-- --- start image slider --- -->
+         <div class="photography-container">
+
+                <div class="slider">
+                    <div class="slides">
+                        <!-- radio button start -->
+                        <input type="radio" name="radio-btn" value="" id="radio1">
+                        <input type="radio" name="radio-btn" value="" id="radio2">
+                        <input type="radio" name="radio-btn" value="" id="radio3">
+                        <input type="radio" name="radio-btn" value="" id="radio4">
+                        <input type="radio" name="radio-btn" value="" id="radio5">
+                        <!-- radio button end -->
+                        <!-- --- slide images start -->
+                        <div class="slide first">
+                            <img src="images/1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/3.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/4.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/5.jpg" alt="">
+                        </div>
+                        <!-- slide images end --- -->
+                        <!-- automatic nav start -->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
+                        </div>
+                        <!-- automatic nav end -->
+                    </div>
+                    <!-- manual nav start -->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                    </div>
+
+                    <!-- manual nav end -->
+                </div>
+            </div>
+
+    <!-- --- end image slider --- -->
+            <div class="photography-txt">
+                <div class="txtt">
+                    <h6>If you like these pictures already feel free to check out my <a href="http://instagram.com/leonberkemeier"><span>Instagram</span></a> and my <a href="https://vsco.co/leonberkemeier/gallery"><span>VSCO</span></a> for further pictures. </h6>
+                    
+                </div>
+            </div>    
+    </section>
+
+    <!-- section contact formular -->
+
+    <section class="connect view" id="connect">
+        <div class="main">
+            <h2 data-value="Lets Connect"><span>L</span>ets Connec<span>t</span></h2>
+            <h6>If you got any <span>Questions </span> let me know!</h6>
+       
+            <form action="" class="contact-form" id="contact-form">
+
+                <input type="text" placeholder="Your name" class="name" required>
+                <input type="email" name="" id="" placeholder="Email" class="email" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write me a message ;)" class="message" required></textarea>
+                <input type="submit" value="Send" class="send-btn">
+    
+            </form>
+        </div>
+    </section>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script defer src="./script.js" type="text/javascript"></script>
+
+    <!-- scripts for contact -->
+    <script defer src="script.js"></script>
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- email js link -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+        emailjs.init('Uc6RlC0v1cy7zI6s5')
+        </script>
+</body>
+</html>

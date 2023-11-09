@@ -56,9 +56,13 @@ body{
     background-color: var(--nav-color);
     z-index: var(--z-fixed);
     box-shadow: 0 1px 5px var(--nav-color);
-    opacity: .7;
+    opacity: .5;
     /* border-bottom: 1px solid var(--first-color); */
 
+}
+.header:hover{
+    opacity: 1;
+    transition: linear 1s;
 }
 .nav{
     position: relative;
