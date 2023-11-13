@@ -88,9 +88,11 @@ body{
 .nav__toggle,
 .nav__close{
     display: inline-flex;
-    font-size: var(--normal-font-size);
+    font-size: 40px;
     color: var(--title-color);
     cursor: pointer;
+    margin-right: 20px;
+    text-shadow: 2px black;
     
 }
 @media screen and (max-width: 1023px){
@@ -162,8 +164,8 @@ body{
 }
 .nav__close{
     position: absolute;
-    top: 20rem;
-    right: 1.5rem;
+    top: 18rem;
+    right: 0;
     color: rgb(187, 66, 66);
 }
 .show-menu{

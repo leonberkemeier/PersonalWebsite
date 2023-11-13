@@ -1,3 +1,28 @@
+
+ /*=============== SHOW MENU ===============*/
+ const navMenu = document.getElementById('nav-menu'),
+ navToggle = document.getElementById('nav-toggle'),
+ navClose = document.getElementById('nav-close')
+
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
+if(navToggle){
+ navToggle.addEventListener('click', () =>{
+     navMenu.classList.add('show-menu')
+ })
+}
+
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+if(navClose){
+ navClose.addEventListener('click', () =>{
+     navMenu.classList.remove('show-menu')
+ })
+};
+
+
+
+
 // // MULTITEXT
 let typingEffect = new Typed (".multiText",{
     strings:["Coder","Leon","Showman","entertainer"],
@@ -291,5 +316,82 @@ var counter = 1;
 
 // image slider end
 
+// contact form
 
+//EMAIL JS
+
+function validate() {
+  let name=document.querySelector('.name');
+  let email=document.querySelector('.email');
+  let msg=document.querySelector('.message');
+  let sendBtn=document.querySelector('.send-btn');
+
+  sendBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if(name.value == "" || email.value == "" || msg.value == ""){
+          emptyerror();
+      }else{
+          sendemail(name.value, email.value, msg.value);
+          success();
+      }
+  });
+}
+validate(); 
+
+function emptyerror(){
+  swal({
+      title: "Oh noo ... !",
+      text: "Fields cannot be empty!",
+      icon: "error",
+      
+    });
+}
+
+function sendemail(name,email,msg){
+  emailjs.send("service_5qyjunq","template_we5mhmo",{
+      from_name: email,
+      to_name: name,
+      message: msg,
+      });
+}
+
+
+function success(){
+  swal({
+      title: "Email Send successfully",
+      text: "We try to reply as fast as possible!",
+      icon: "success",
+      
+    });
+};
+
+// alert('this sucks');
+
+
+
+
+
+
+// ===== icons js =====
+
+
+document.getElementById('btn-vsco').addEventListener("mouseover", function() {
+  let icon = this.querySelector('.button-icon');
+  icon.classList.toggle('rotate-icons');
+});
+
+document.getElementById('btn-insta').addEventListener("mouseover", function() {
+  let icon = this.querySelector('.button-icon');
+  icon.classList.toggle('rotate-icons');
+});
+
+document.getElementById('btn-li').addEventListener("mouseover", function() {
+  let icon = this.querySelector('.button-icon');
+  icon.classList.toggle('rotate-icons');
+});
+
+document.getElementById('btn-gh').addEventListener("mouseover", function() {
+  let icon = this.querySelector('.button-icon');
+  icon.classList.toggle('rotate-icons');
+});
 

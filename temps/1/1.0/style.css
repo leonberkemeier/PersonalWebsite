@@ -95,9 +95,10 @@ body{
 .nav__toggle,
 .nav__close{
     display: inline-flex;
-    font-size: var(--normal-font-size);
+    font-size: 40px;
     color: var(--title-color);
     cursor: pointer;
+    margin-right: 20px;
     
 }
 @media screen and (max-width: 1023px){
@@ -170,7 +171,7 @@ body{
 .nav__close{
     position: absolute;
     top: 20rem;
-    right: 1.5rem;
+    right: 0;
     color: rgb(187, 66, 66);
 }
 .show-menu{
@@ -413,7 +414,7 @@ button:hover{
 .textbox{
     position: relative;
     left: 10%;
-    top: 40%;
+    top: 30%;
     
 }
 .imgbox{
@@ -1014,8 +1015,8 @@ span{
         position: relative;
         height: 100%;
         width: calc(130% - 80px);
-        top: 150px;
-        right: -90px;
+        top: 200px;
+        right: -100px;
         /* border-radius: 50%; */
         
     }
@@ -1492,3 +1493,166 @@ span{
         background: #546eff;
         transition: .3s all linear;
     }    
+
+
+
+    /* ====== css for icons ========= */
+
+    /*------------- icons --------------- */
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    right: -16.9vw;
+    transform: translateY(-50%);
+    color: rgb(202, 197, 197);
+    
+}
+.icon-link{
+    color: rgb(202, 197, 197);
+    text-decoration: none;
+    margin: 20px;
+    /* background: blue; */
+}
+.icons .fa{
+    width: 20vw;
+    padding: 1vw;
+    font-size: 2.0vw;
+    cursor: pointer;
+    background: var(--title-color);
+    transition: .5s ease;
+    margin: .5vw;
+    border-radius: 1.5vw;
+    border: 1px solid black;
+
+}
+.icons .fa:hover,
+.icon-link:hover{
+    color: #fff;
+    background: var(--lighter-color);
+    transform: translateX(-13vw);
+    /* background: rgb(127, 0, 255); */
+    /* background-color: blue; */
+    
+}
+
+.icons .fa span{
+    position: relative;
+    font-size: 1.8vw;
+    bottom: 1.2vw;
+    margin-left: 1.8vw;
+    margin-top: 1.5vw;
+    
+}
+.button-icon{
+    transition: 1s;
+}
+
+.rotate-icons{
+    rotate: 360deg;
+}
+
+.fa-vsco{
+    animation: dropIn 2.2s ease-in-out;
+}
+.fa-insta{
+    animation: dropIn 2.0s ease-in-out;
+}
+.fa-linkedin{
+    animation: dropIn 1.8s ease-in-out;
+}
+.fa-github{
+    animation: dropIn 1.6s ease-in-out;
+}
+
+
+@keyframes dropIn {
+    from {transform: translateY( -700px);}
+    to{transform: translateY(0%);}
+    
+}
+
+
+    /* ====== css for footer ======== */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: var(--footer-color);
+    padding: 30px 10%;
+}
+
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 25%;
+}
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--title-color);
+    text-transform: capitalize;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: var(--title-color);
+    height: 2px;
+    width: 40px;
+}
+ul li:not(:last-child){
+    margin-bottom: 8px;
+}
+ul li a{
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #bdb6b6;
+    text-decoration: none;
+    transition: .4s;
+}
+footer ul li a:hover{
+    color: var(--title-color);
+    padding-left: 5px;
+}
+.links a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: var(--title-color);
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: .4s;
+
+}
+.links a:hover{
+    color: #4d4f55;
+    background-color: var(--lighter-color);
+    rotate: 360deg;
+}
+@media screen and (max-width:740px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .footer-col h4::before{
+        all: unset;
+    }
+}
+@media screen and (max-width: 555px){
+    .footer-col{
+        width: 100%;
+    }
+}

@@ -1,0 +1,49 @@
+
+.one{
+   
+
+    position: relative;
+    height: 50px;
+    width: 200px;
+    background: green;
+    left: 200px;
+    top: 250px;
+    animation: dropIn 1.5s ease;
+    /* animation-delay: calc(var(--order) * 200ms); */
+    border-radius: 5px;
+}
+
+.two{
+    position: relative;
+    height: 50px;
+    width: 200px;
+    background: green;
+    left: 200px;
+    top: 300px;
+    animation: dropIn 1.75s ease;
+    /* animation-delay: calc(var(--order) * 200ms); */
+    border-radius: 5px;
+}
+
+.three{
+    position: relative;
+    height: 50px;
+    width: 200px;
+    background: green;
+    left: 200px;
+    top: 350px;
+    animation: dropIn 2s ease;
+    /* animation-delay: calc(var(--order) * 200ms); */
+    border-radius: 5px;
+}
+
+.drop{
+    text-align: center;
+    background: green;
+}
+
+@keyframes dropIn {
+    from {transform: translateY(-900px);}
+    to{transform: translateY(0);}
+    
+}

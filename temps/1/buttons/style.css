@@ -251,6 +251,7 @@ span{
     right: -16.5vw;
     transform: translateY(-50%);
     color: rgb(202, 197, 197);
+    
 }
 .icon-link{
     color: rgb(202, 197, 197);
@@ -267,6 +268,7 @@ span{
     transition: .5s ease;
     margin: .5vw;
     border-radius: 1.5vw;
+    
 
 }
 .icons .fa:hover,
@@ -293,4 +295,24 @@ span{
 
 .rotate{
     rotate: 360deg;
+}
+
+.fa-vsco{
+    animation: dropIn 1.5s ease;
+}
+.fa-insta{
+    animation: dropIn 1.7s ease;
+}
+.fa-linkedin{
+    animation: dropIn 1.9s ease;
+}
+.fa-github{
+    animation: dropIn 2.1s ease;
+}
+
+
+@keyframes dropIn {
+    from {transform: translateY( -700px);}
+    to{transform: translateY(0%);}
+    
 }
