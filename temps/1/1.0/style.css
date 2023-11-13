@@ -1052,10 +1052,12 @@ span{
 .grid .grid_skills h1{
     color: var(--white-color);
     text-decoration: underline 4px var(--title-color);
+    text-shadow: 0 0 10px black;
 }
 .grid .grid_courses h1{
     color: var(--white-color);
     text-decoration: underline 4px var(--title-color);
+    text-shadow: 0 0 10px black;
 }
 .grid .grid_courses{
     height: 100%;
@@ -1184,10 +1186,13 @@ span{
 .skills .grid .courseItem{
     margin: 10px;
     
+    text-align: justify;
+    
 }
 .skills .grid .skillsItem{
     margin: 10px;
     
+    text-align: justify;
 }
 
 .skills .grid .skillsItem .content h4{
@@ -1525,7 +1530,7 @@ span{
     transition: .5s ease;
     margin: .5vw;
     border-radius: 1.5vw;
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
 
 }
 .icons .fa:hover,
