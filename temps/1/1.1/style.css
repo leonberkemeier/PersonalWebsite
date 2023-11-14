@@ -77,7 +77,7 @@ body{
 }
 .nav__logo{
     width: 35px;
-    margin-left: 40px;
+    margin-left: 5vw;
     font-size: 30px;
     
 
@@ -377,9 +377,9 @@ body{
 
 }
 .btns{
-    width: 60%;
+    width: 430px;
     position: fixed;
-    left: 30%;
+    left: calc(50% - 215px);
     /* left: 50px; */
     bottom: 20px;
 
@@ -421,7 +421,7 @@ button:hover{
     position: relative;
     height: 100%;
     width: calc(130% - 80px);
-    top: 260px;
+    top: 20%;
     right: -90px;
     filter: brightness(140%);
     /* border-radius: 50%; */
@@ -429,7 +429,7 @@ button:hover{
 }  
 .imgbox #splash{
     position: absolute;
-    top: 75%;
+    top: 69%;
     left: 110%;
     transform: translate(-50%, -50%)rotate(-18deg);
     width: 200%;
@@ -441,6 +441,97 @@ button:hover{
     color: blueviolet; */
     opacity: .7;
 }
+
+
+
+@media screen and (max-width:900px){
+    .cols1{
+        margin-top:100px;
+    }
+    .textbox{
+        top: 30%;
+    }
+}
+
+@media screen and (max-width:800px){
+    .cols1{
+        margin-top: 150px;
+    }
+    .textbox{
+        top: 25%;;
+    }
+}
+@media screen and (max-width:800px){
+    .cols1{
+        margin-top: 200px;
+    }
+    .textbox{
+        top: 20%;
+    }
+    .home button{
+        font-size: 20px;
+    }
+    .btns{
+        left: calc(50% - 184px);
+    }
+}
+
+@media screen and (max-width:650px){
+    .cols1{
+        margin-top: 250px;
+    }
+   
+}
+
+@media screen and (max-width:600px){
+    .highlights{
+        display: flex;
+        flex-direction: column;
+        top: 20vh;
+        align-items: center;
+    }
+    .cols0{
+        display: flex;
+        align-items: center;
+        width: 60%;
+    }
+    .cols1{
+        margin-top: 50px;
+        width: 70%;
+    }
+    .btns{
+        bottom: 10px;
+       
+    }
+    /* .home button{
+        font-size: 10px;
+    } */
+}
+
+@media screen and (max-width:600px){
+    .cols1{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .highlights{
+        top: 8vh;
+    }
+}
+
+@media screen and (max-width:390px){
+    .highlights{
+        top: 8vh;
+    }
+    .home button{
+        font-size: 15px;
+    }
+    .btns{
+        left: calc(50% - 154px);
+    }
+}
+
 
 
 
@@ -480,3 +571,9 @@ button:hover{
 }
 
 
+/* @media screen and (max-width:1500px){
+    .imgbox img{
+        top: 30%;
+    }
+    
+} */
