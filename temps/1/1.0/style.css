@@ -156,7 +156,8 @@ body{
     padding: 1rem 2.0rem;
     border: 2px solid white;
     border-radius: .75rem;
-}.nav__button-ghost:hover{
+}
+.nav__button-ghost:hover{
     transition: color .3s;
     border: 2px solid var(--title-color);
     color: var(--title-color);
@@ -246,7 +247,7 @@ body{
     height: 100%;
     width: 100vw;
     position: absolute;
-    background: url('background2.jpg');
+    background: url('images/background2.jpg');
     background-size: cover;
     background-position: center;
     filter: brightness(50%);
@@ -289,51 +290,6 @@ body{
 
 
 
-/*------------- icons --------------- */
-
-.icons{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 50%;
-    right: -16.5vw;
-    transform: translateY(-50%);
-    color: rgb(202, 197, 197);
-}
-.icon-link{
-    color: rgb(202, 197, 197);
-    text-decoration: none;
-    margin: 20px;
-    /* background: blue; */
-}
-.icons .fa{
-    width: 20vw;
-    padding: 1vw;
-    font-size: 2.0vw;
-    cursor: pointer;
-    background: var(--title-color);
-    transition: .5s ease;
-    margin: .5vw;
-    border-radius: 1.5vw;
-
-}
-.icons .fa:hover,
-.icon-link:hover{
-    color: #fff;
-    background: var(--lighter-color);
-    transform: translateX(-13vw);
-    /* background: rgb(127, 0, 255); */
-    /* background-color: blue; */
-}
-
-.icons .fa span{
-    position: relative;
-    font-size: 1.8vw;
-    bottom: 1.2vw;
-    margin-left: 1.8vw;
-    margin-top: 1.5vw;
-
-}
 
 /* --------- home ----------- */
 
@@ -414,7 +370,7 @@ button:hover{
 .textbox{
     position: relative;
     left: 10%;
-    top: 40%;
+    top: 30%;
     
 }
 .imgbox{
@@ -450,93 +406,6 @@ button:hover{
 
 
 
-@media screen and (max-width:900px){
-    .cols1{
-        margin-top:100px;
-    }
-    .textbox{
-        top: 30%;
-    }
-}
-
-@media screen and (max-width:800px){
-    .cols1{
-        margin-top: 150px;
-    }
-    .textbox{
-        top: 25%;;
-    }
-}
-@media screen and (max-width:800px){
-    .cols1{
-        margin-top: 200px;
-    }
-    .textbox{
-        top: 20%;
-    }
-    .home button{
-        font-size: 20px;
-    }
-    .btns{
-        left: calc(50% - 184px);
-    }
-}
-
-@media screen and (max-width:650px){
-    .cols1{
-        margin-top: 250px;
-    }
-   
-}
-
-@media screen and (max-width:600px){
-    .highlights{
-        display: flex;
-        flex-direction: column;
-        top: 20vh;
-        align-items: center;
-    }
-    .cols0{
-        display: flex;
-        align-items: center;
-        width: 60%;
-    }
-    .cols1{
-        margin-top: 50px;
-        width: 70%;
-    }
-    .btns{
-        bottom: 10px;
-       
-    }
-    /* .home button{
-        font-size: 10px;
-    } */
-}
-
-@media screen and (max-width:600px){
-    .cols1{
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width:450px){
-    .highlights{
-        top: 8vh;
-    }
-}
-
-@media screen and (max-width:390px){
-    .highlights{
-        top: 8vh;
-    }
-    .home button{
-        font-size: 15px;
-    }
-    .btns{
-        left: calc(50% - 154px);
-    }
-}
 
 
 
@@ -562,6 +431,10 @@ button:hover{
 }
 .cols .cols1{
     margin-right: 0;
+    margin-top: 15%;
+}
+.textbox{
+    width: 480px;
 }
 
 .topline{
@@ -585,35 +458,105 @@ button:hover{
     text-transform: capitalize;
 
 }
-.btns{
-    width: 60%;
-    position: fixed;
-    left: 30%;
-    /* left: 50px; */
-    bottom: 20px;
 
-}
-.home button{
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: 400;
-    color: #fff;
-    background-color: rgb(61, 83, 95,.8);
-    padding: 8px 14px;
-    margin: 50px 5px;
-    border-radius: 20px;
-    letter-spacing: 2px;
-    text-transform:capitalize;
-    box-shadow: 0 15px 10px rgba(0,0,0,0.5);
 
-}
-button:hover{
-    background-color: var(--lighter-color);
-
+@media screen and (max-width:900px){
+    .cols1{
+        margin-top:20%;
+    }
+    .textbox{
+        top: 20%;
+    }
 }
 
+@media screen and (max-width:800px){
+    .cols1{
+        margin-top: 30%;
+    }
+    .textbox{
+        top: 20%;;
+    }
+    .cols0{
+        margin-top: 0px;
+    }
+    
+}
+@media screen and (max-width:700px){
+    .highlights{
+        display: flex;
+        flex-direction: column;
+        top: 20vh;
+        align-items: center;
+    }
+    .cols1{
+        margin-top: 50px;
+    }
+
+    .home button{
+        font-size: 20px;
+    }
+    .btns{
+        left: calc(50% - 184px);
+    }
+    .cols0{
+        margin-left: 0px;
+    }
+    
+    .textbox{
+        top: -15%;
+        left: calc(50% - 240px);
+    }
+    .imgbox img{
+        width: calc(175% - 80px);
+        right: -50px;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width:600px){
+    .textbox{
+        width: 400px;
+        left: calc(50% - 200px);
+    }
+   
+}
+
+
+
+@media screen and (max-width:450px){
+    .highlights{
+        top: 8vh;
+    }
+    .textbox{
+        width: 380px;
+        left: calc(50% - 180px);
+    }
+    .cols0{
+        margin-top: 100px;
+    }
+    .cols1{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:390px){
+    .textbox{
+        width: 340px;
+        left: calc(50% - 170px);
+    }
+    .highlights{
+        top: 8vh;
+    }
+    .home button{
+        font-size: 15px;
+    }
+    .btns{
+        left: calc(50% - 154px);
+    }
+}
 
 
 /*  --- about sesction ---- */
@@ -898,80 +841,7 @@ span{
 
 
     
-       /* --------- home ----------- */
-    
-    
-    .wrapper{
-        display: flex;
-        width: 100%;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-        padding: 0 10%;
-        overflow: hidden;
-    }
-    .cols{
-        width: 50%;
-    }
-    .cols0{
-        margin-top: 200px;
-        margin-left: 5%;
-    }
-    .cols .cols1{
-        margin-right: 0;
-    }
-    
-    .topline{
-        display: block;
-        position: relative;
-        font-size: 35px;
-        letter-spacing: 5px;
-        color: var(--text-color);
-    }
-    .topline::after{
-        position: absolute;
-        content: '';
-        height: 4px;
-        width: 45px;
-        bottom: 10px;
-        background-color: rgb(127, 0, 255);
-    }
-    
-    .multiText{
-        color: rgb(127, 0, 255);
-        text-transform: capitalize;
-    
-    }
-    .btns{
-        width: 60%;
-        position: fixed;
-        left: 30%;
-        /* left: 50px; */
-        bottom: 20px;
-    
-    }
-    .home button{
-        outline: none;
-        border: none;
-        cursor: pointer;
-        font-size: 25px;
-        font-weight: 400;
-        color: #fff;
-        background-color: rgb(61, 83, 95,.8);
-        padding: 8px 14px;
-        margin: 50px 5px;
-        border-radius: 20px;
-        letter-spacing: 2px;
-        text-transform:capitalize;
-        box-shadow: 0 15px 10px rgba(0,0,0,0.5);
-    
-    }
-    button:hover{
-        background-color: rgb(127, 0, 255);
-    
-    }
-    
-    
+
     
     /*  --- about sesction ---- */
     
@@ -1096,21 +966,6 @@ span{
         object-fit: cover;
     }
     
-    .imgbox{
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-    .imgbox img{
-        position: relative;
-        height: 100%;
-        width: calc(130% - 80px);
-        top: 200px;
-        right: -100px;
-        /* border-radius: 50%; */
-        
-    }
-
 
     /* ---- skills page ----- */
 
@@ -1640,6 +1495,41 @@ span{
     margin-left: 1.8vw;
     margin-top: 1.5vw;
     
+}
+
+
+
+@media screen and (max-width:800px){
+    .icons .fa{
+        width: 32vw;
+        font-size: 4vw;
+        border-radius: 2vw;
+    }
+    .icons{
+        right: -26.9vw;
+    }
+}
+
+@media screen and (max-width:600px){
+    .icons .fa{
+        width: 44vw;
+        font-size: 6vw;
+        border-radius: 3vw;
+    }
+    .icons{
+        right: -35.9vw;
+    }
+}
+
+@media screen and (max-width:460px){
+    .icons .fa{
+        width: 46vw;
+        font-size: 6vw;
+        border-radius: 3vw;
+    }
+    .icons{
+        right: -37.9vw;
+    }
 }
 .button-icon{
     transition: 1s;

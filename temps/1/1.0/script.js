@@ -65,7 +65,7 @@ document.querySelector(".nav__logo h1").onmouseover = event =>{
 };
 
 
-document.querySelector(".main h2").onmouseover = event =>{
+document.querySelector(".projects .main h2").onmouseover = event =>{
     let iteration = 0;
 
     clearInterval(interval);
@@ -89,6 +89,85 @@ document.querySelector(".main h2").onmouseover = event =>{
     iteration += 1/3;
     }, 30);
     
+};
+
+
+document.querySelector(".skills .main h2").onmouseover = event =>{
+  let iteration = 0;
+
+  clearInterval(interval);
+
+
+  interval = setInterval(() => {
+      event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter,index) => {
+          if(index < iteration) {
+              return event.target.dataset.value[index];
+          }
+          return letters[Math.floor(Math.random() * 26)]
+      })
+      .join("");
+
+  if(iteration >= event.target.dataset.value.length){
+      clearInterval(interval);
+  }
+
+  iteration += 1/3;
+  }, 30);
+  
+};
+
+document.querySelector(".photography .main h2").onmouseover = event =>{
+  let iteration = 0;
+
+  clearInterval(interval);
+
+
+  interval = setInterval(() => {
+      event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter,index) => {
+          if(index < iteration) {
+              return event.target.dataset.value[index];
+          }
+          return letters[Math.floor(Math.random() * 26)]
+      })
+      .join("");
+
+  if(iteration >= event.target.dataset.value.length){
+      clearInterval(interval);
+  }
+
+  iteration += 1/3;
+  }, 30);
+  
+};
+
+document.querySelector(".connect .main h2").onmouseover = event =>{
+  let iteration = 0;
+
+  clearInterval(interval);
+
+
+  interval = setInterval(() => {
+      event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter,index) => {
+          if(index < iteration) {
+              return event.target.dataset.value[index];
+          }
+          return letters[Math.floor(Math.random() * 26)]
+      })
+      .join("");
+
+  if(iteration >= event.target.dataset.value.length){
+      clearInterval(interval);
+  }
+
+  iteration += 1/3;
+  }, 30);
+  
 };
 
 
