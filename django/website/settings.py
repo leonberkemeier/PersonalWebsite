@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-9sumdb*mc4bjw11k7i4y0&ogb=n@ukh*k%54%xaeav9xaoj9b7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost', 
+]
 
 
 # Application definition
