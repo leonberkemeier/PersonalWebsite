@@ -1555,8 +1555,8 @@ span{
         outline: none;
         font-size: .9rem;
         padding: 15px;
-        color: white;
-        background: rgb(43, 43, 107);
+        color: var(--nav-color);
+        background: var(--title-color);
         border-radius: .4rem;
     
     
@@ -1569,7 +1569,7 @@ span{
         font-size: 1rem;
         letter-spacing: 1px;
         font-weight: 500;
-        background: rgb(94, 86, 245);
+        background: var(--title-color);
         cursor: pointer;
     
     }
@@ -1654,12 +1654,12 @@ span{
 
 @media screen and (max-width:800px){
     .icons .fa{
-        width: 32vw;
+        width: 35vw;
         font-size: 4vw;
         border-radius: 2vw;
     }
     .icons{
-        right: -26.9vw;
+        right: -29.9vw;
     }
 }
 
@@ -1670,18 +1670,18 @@ span{
         border-radius: 3vw;
     }
     .icons{
-        right: -38.9vw;
+        right: -46.9vw;
     }
 }
 
 @media screen and (max-width:460px){
     .icons .fa{
-        width: 46vw;
+        width: 55vw;
         font-size: 6vw;
         border-radius: 3vw;
     }
     .icons{
-        right: -37.9vw;
+        right: -46.9vw;
     }
 }
 .button-icon{

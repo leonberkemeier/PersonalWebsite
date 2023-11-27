@@ -113,6 +113,8 @@
 
                     <li class="project_list_item">
                         <p><b>My</b> first project was a to-do-list. Which was created with python in the framework Django.</p>
+
+                        
                         <button class="show-modal">view my first project</button> 
                     </li>
 
@@ -122,13 +124,13 @@
                     </li>
 
                     <li class="project_list_item">
-                        <p><b>Third</b> project was a Web-Scraping tool in which I used Scrapy to yield prices and save them frequently into a SQL-Database. If a big Sale was to send me an Email using EmailJS.</p>
+                        <p><b>Third</b> project was a Web-Scraping tool in which I used Scrapy to yield prices and save them frequently into a SQL-Database. If there was change in price an Email was sent to me using EmailJS.</p>
                         <button class="show-modal2">view my third project</button> 
                     </li>
 
                     <li class="project_list_item">
-                        <p><b>Fourth</b> was this personal portfolio website. This project combines all previous projects into one and is supposed to show some frontend skills.</p>
-                        <button class="show-modal3">view my fourth project</button>  
+                        <p><b>Fourth</b> was this personal portfolio website. This project combines all previous projects into one and is supposed to show some frontend skills I picked up along the way.</p>
+                        <!-- <button class="show-modal3">view my fourth project</button>   -->
                     </li>
                 </ul>
 
@@ -156,38 +158,80 @@
             <h1>This is Project 0</h1>
             <img src="images/projects/list.png" alt="">
             <p>
-              This projects backend was created in django and is supposed to be a simple to-do-list to which you can add, check and remove tasks.
+              The backend for was created with the framework django. This project is a simple to-do-list to which you can add, check and remove tasks.
             </p>
             <br>
-            <a href="">view the project</a>
+            <a href="/login">to the project</a>
           </div>
     
         <div class="modal1 hidden">
           <button class="close-modal1">&times;</button>
           <h1>This is Project 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+          
+          <div class="cardscontainer">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icon">
+                        1
+                    </div>
+                    <div class="description">
+                        <!-- <h4>Projects</h4> -->
+                        <!-- <p> has so much to offer creative activities</p> -->
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2">
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icon">
+                        2
+                    </div>
+                    <div class="description">
+                        <!-- <h4>Index Cards</h4> -->
+                        <!-- <p> has so much to offer creative activities</p> -->
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c3">
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="icon">
+                        3
+                    </div>
+                    <div class="description">
+                        <!-- <h4>Index Card</h4> -->
+                        <!-- <p> has so much to offer creative activities</p> -->
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c4">
+            <!-- <label for="c4" class="card">
+                <div class="row">
+                    <div class="icon">
+                        4
+                    </div>
+                    <div class="description">
+                        <h4>Winter</h4>
+                        <p> has so much to offer creative activities</p>
+                    </div>
+                </div>
+            </label> -->
+        </div>
+        <p>
+            My second project was an index card app. In the App the User can create his individual Projects and add index cards to the particular projects.
           </p>
+        
           <a href="">link to project</a>
         </div>
         <div class="modal2 hidden">
           <button class="close-modal2">&times;</button>
           <h1>This is Project 2</h1>
+          <img src="media/scraper.png" alt="">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+            With the framework <a href="https://scrapy.org/">Scrapy</a> I created a program that has the ability to scrape special internet sites for prices. Using the <a href="https://de.wikipedia.org/wiki/Cron">Cron-Daemon</a> I frequently scraped the prices of chosen Items and saved them into a SQL-Database. As soon as there was a drop in more than 20% there was an Email sent to my account notifying me about the new prices.
           </p>
+          
           <a href="">link to project</a>
         </div>
         <div class="modal3 hidden">
