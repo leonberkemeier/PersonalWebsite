@@ -45,6 +45,9 @@
     --font-family-header:[];
     --sub-header-ff: [] ;
 
+    --modal-width: 950px;
+    --modal-height: 580px;
+
 }
 
 body{
@@ -918,7 +921,7 @@ span{
     background-size: cover;
     cursor: pointer;
     overflow: hidden;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
     margin: 0 10px;
     display: flex;
     align-items: flex-end;
@@ -979,13 +982,13 @@ span{
 }
 
 .card[for="c1"]{
-    background-image: url(./media/1.png);
+    background-image: url(../img/projects/1.png);
 }
 .card[for="c2"]{
-    background-image: url(./media/2.png);
+    background-image: url(../img/projects/2.png);
 }
 .card[for="c3"]{
-    background-image: url(./media/3.png);
+    background-image: url(../img/projects/3.png);
 }
 /* .card[for="c4"]{
     background-image: url(./media/img4.jpg);

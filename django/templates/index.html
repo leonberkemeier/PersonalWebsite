@@ -82,8 +82,9 @@
                        
             <div class="cols cols1" id="cols1">
                 <div class="imgbox" id="imgbox">
-                    <img class="splash" src="./media/projects/list.png" id="splash">
-                    <img class="profile" src="images/img4.png">
+                    <img class="splash" src="{% static '/img/images/splash3.png' %}" id="splash">
+                    <img class="profile" src="{% static '/img/images/img4.png' %}">
+                    
                     <!-- splashes -->
                     <!-- https://www.pngall.com/de/paint-splash-png -->
                 </div>
@@ -149,7 +150,7 @@
                 <div class="cols1">
                     <div class="box">
                         
-                        <img src="images/img99.jpg" alt="">
+                        <img src="{% static '/img/images/img99.jpg' %}" alt="">
                     </div>
                 </div>
             </div>
@@ -157,7 +158,7 @@
             <div class="modal hidden">
                 <button class="close-modal">&times;</button>
                 <h1>This is Project 0</h1>
-                <img src="images/projects/list.png" alt="">
+                <img src="{% static '/img/projects/list.png' %}" alt="">
                 <p>
                   The backend for was created with the framework django. This project is a simple to-do-list to which you can add, check and remove tasks.
                 </p>
@@ -228,7 +229,7 @@
             <div class="modal2 hidden">
               <button class="close-modal2">&times;</button>
               <h1>This is Project 2</h1>
-              <img src="media/scraper.png" alt="">
+              <img src="{% static '/img/projects/scraper.png'%}" alt="">
               <p>
                 With the framework <a href="https://scrapy.org/">Scrapy</a> I created a program that has the ability to scrape special internet sites for prices. Using the <a href="https://de.wikipedia.org/wiki/Cron">Cron-Daemon</a> I frequently scraped the prices of chosen Items and saved them into a SQL-Database. As soon as there was a drop in more than 20% there was an Email sent to my account notifying me about the new prices.
               </p>
@@ -489,19 +490,19 @@
                         <!-- radio button end -->
                         <!-- --- slide images start -->
                         <div class="slide first">
-                            <img src="images/1.jpg" alt="">
+                            <img src="{% static 'img/images/1.jpg'%}" alt="">
                         </div>
                         <div class="slide">
-                            <img src="images/2.jpg" alt="">
+                            <img src="{% static 'img/images/2.jpg'%}" alt="">
                         </div>
                         <div class="slide">
-                            <img src="images/3.jpg" alt="">
+                            <img src="{% static 'img/images/3.jpg'%}" alt="">
                         </div>
                         <div class="slide">
-                            <img src="images/4.jpg" alt="">
+                            <img src="{% static 'img/images/4.jpg'%}" alt="">
                         </div>
                         <div class="slide">
-                            <img src="images/5.jpg" alt="">
+                            <img src="{% static 'img/images/5.jpg'%}" alt="">
                         </div>
                         <!-- slide images end --- -->
                         <!-- automatic nav start -->
