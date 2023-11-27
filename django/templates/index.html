@@ -82,7 +82,7 @@
                        
             <div class="cols cols1" id="cols1">
                 <div class="imgbox" id="imgbox">
-                    <img class="splash" src="images/splash3.png" id="splash">
+                    <img class="splash" src="./media/projects/list.png" id="splash">
                     <img class="profile" src="images/img4.png">
                     <!-- splashes -->
                     <!-- https://www.pngall.com/de/paint-splash-png -->
@@ -100,115 +100,157 @@
        
     </section>
 
-    <!-- ------- section projects ---------- -->
+        <!-- ------- section projects ---------- -->
 
-    <section class="projects view" id="projects">
-        <div class="main">
-            <h2 data-value="My Projects"><span>My</span> Project<span>s</span></h2>
-            <h6>Here I want to display a list of Projects that I finished. The backend of my projects are all django-based. The frontend usually was made using HTML and CSS. With further projects there was more and more JS used.</h6>
-        </div>
-        <div class="content">
-            
-            <div class="cols0">
-                <ul class="project__list">
-
-                    <li class="project_list_item">
-                        <p><b>My</b> first project was a to-do-list. Which was created with python in the framework Django.</p>
-                        <button class="show-modal">view my first project</button> 
-                    </li>
-
-                    <li class="project_list_item">
-                        <p><b>The</b> second project was a flash-card-learning web application, whhich allows you to upload flashcards into different projects. Additionally I added a document-scanner using CV2.</p>
-                        <button class="show-modal1">view my second project</button> 
-                    </li>
-
-                    <li class="project_list_item">
-                        <p><b>Third</b> project was a Web-Scraping tool in which I used Scrapy to yield prices and save them frequently into a SQL-Database. If a big Sale was to send me an Email using EmailJS.</p>
-                        <button class="show-modal2">view my third project</button> 
-                    </li>
-
-                    <li class="project_list_item">
-                        <p><b>Fourth</b> was this personal portfolio website. This project combines all previous projects into one and is supposed to show some frontend skills.</p>
-                        <button class="show-modal3">view my fourth project</button>  
-                    </li>
-                </ul>
-
-                <!-- <div class="project">
-                    <p><b>M</b>y first project was a basic to-do-list, which was designed to be a Mischung aus shopping und to-do-list.</p>
-                    <a href="#">mehr</a>    
-                </div>
-
-                <div class="project">
-                    <p><b>T</b>he second project was a flash-card-style web application in which you were supposed to be able to create projects and to upload flash-cards ment for learning new skills.</p>
-                    <a href="#">mehr</a>    
-                </div> -->
-
+        <section class="projects view" id="projects">
+            <div class="main">
+                <h2 data-value="My Projects">My Projects</h2>
+                <h6>Here I want to display a list of Projects that I finished. The backend of my projects are all django-based. The frontend usually was made using HTML and CSS. With further projects there was more and more JS used.</h6>
             </div>
-            <div class="cols1">
-                <div class="box">
-                    
-                    <img src="images/img99.jpg" alt="">
+            <div class="content">
+                
+                <div class="cols0">
+                    <ul class="project__list">
+    
+                        <li class="project_list_item">
+                            <p><b>My</b> first project was a to-do-list. Which was created with python in the framework Django.</p>
+    
+                            
+                            <button class="show-modal">view my first project</button> 
+                        </li>
+    
+                        <li class="project_list_item">
+                            <p><b>The</b> second project was a flash-card-learning web application, whhich allows you to upload flashcards into different projects. Additionally I added a document-scanner using CV2.</p>
+                            <button class="show-modal1">view my second project</button> 
+                        </li>
+    
+                        <li class="project_list_item">
+                            <p><b>Third</b> project was a Web-Scraping tool in which I used Scrapy to yield prices and save them frequently into a SQL-Database. If there was change in price an Email was sent to me using EmailJS.</p>
+                            <button class="show-modal2">view my third project</button> 
+                        </li>
+    
+                        <li class="project_list_item">
+                            <p><b>Fourth</b> was this personal portfolio website. This project combines all previous projects into one and is supposed to show some frontend skills I picked up along the way.</p>
+                            <!-- <button class="show-modal3">view my fourth project</button>   -->
+                        </li>
+                    </ul>
+    
+                    <!-- <div class="project">
+                        <p><b>M</b>y first project was a basic to-do-list, which was designed to be a Mischung aus shopping und to-do-list.</p>
+                        <a href="#">mehr</a>    
+                    </div>
+    
+                    <div class="project">
+                        <p><b>T</b>he second project was a flash-card-style web application in which you were supposed to be able to create projects and to upload flash-cards ment for learning new skills.</p>
+                        <a href="#">mehr</a>    
+                    </div> -->
+    
+                </div>
+                <div class="cols1">
+                    <div class="box">
+                        
+                        <img src="images/img99.jpg" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="modal hidden">
-            <button class="close-modal">&times;</button>
-            <h1>This is Project 0</h1>
-            <img src="images/projects/list.png" alt="">
+    
+            <div class="modal hidden">
+                <button class="close-modal">&times;</button>
+                <h1>This is Project 0</h1>
+                <img src="images/projects/list.png" alt="">
+                <p>
+                  The backend for was created with the framework django. This project is a simple to-do-list to which you can add, check and remove tasks.
+                </p>
+                <br>
+                <a href="/login">to the project</a>
+              </div>
+        
+            <div class="modal1 hidden">
+              <button class="close-modal1">&times;</button>
+              <h1>This is Project 1</h1>
+              
+              <div class="cardscontainer">
+                <input type="radio" name="slide" id="c1" checked>
+                <label for="c1" class="card">
+                    <div class="row">
+                        <div class="icon">
+                            1
+                        </div>
+                        <div class="description">
+                            <!-- <h4>Projects</h4> -->
+                            <!-- <p> has so much to offer creative activities</p> -->
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c2">
+                <label for="c2" class="card">
+                    <div class="row">
+                        <div class="icon">
+                            2
+                        </div>
+                        <div class="description">
+                            <!-- <h4>Index Cards</h4> -->
+                            <!-- <p> has so much to offer creative activities</p> -->
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c3">
+                <label for="c3" class="card">
+                    <div class="row">
+                        <div class="icon">
+                            3
+                        </div>
+                        <div class="description">
+                            <!-- <h4>Index Card</h4> -->
+                            <!-- <p> has so much to offer creative activities</p> -->
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c4">
+                <!-- <label for="c4" class="card">
+                    <div class="row">
+                        <div class="icon">
+                            4
+                        </div>
+                        <div class="description">
+                            <h4>Winter</h4>
+                            <p> has so much to offer creative activities</p>
+                        </div>
+                    </div>
+                </label> -->
+            </div>
             <p>
-              This projects backend was created in django and is supposed to be a simple to-do-list to which you can add, check and remove tasks.
-            </p>
-            <br>
-            <a href="">view the project</a>
-          </div>
-    
-        <div class="modal1 hidden">
-          <button class="close-modal1">&times;</button>
-          <h1>This is Project 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
-          </p>
-          <a href="">link to project</a>
-        </div>
-        <div class="modal2 hidden">
-          <button class="close-modal2">&times;</button>
-          <h1>This is Project 2</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
-          </p>
-          <a href="">link to project</a>
-        </div>
-        <div class="modal3 hidden">
-          <button class="close-modal3">&times;</button>
-          <h1>This is Project 3</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
-          </p>
-        </div>  
-    
-        <div class="overlay hidden"></div>
-    </section>
-
-
+                My second project was an index card app. In the App the User can create his individual Projects and add index cards to the particular projects.
+              </p>
+            
+              <a href="">link to project</a>
+            </div>
+            <div class="modal2 hidden">
+              <button class="close-modal2">&times;</button>
+              <h1>This is Project 2</h1>
+              <img src="media/scraper.png" alt="">
+              <p>
+                With the framework <a href="https://scrapy.org/">Scrapy</a> I created a program that has the ability to scrape special internet sites for prices. Using the <a href="https://de.wikipedia.org/wiki/Cron">Cron-Daemon</a> I frequently scraped the prices of chosen Items and saved them into a SQL-Database. As soon as there was a drop in more than 20% there was an Email sent to my account notifying me about the new prices.
+              </p>
+              
+              <a href="">link to project</a>
+            </div>
+            <div class="modal3 hidden">
+              <button class="close-modal3">&times;</button>
+              <h1>This is Project 3</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>  
+        
+            <div class="overlay hidden"></div>
+        </section>
     <!-- ---- section skills ---- -->
 
     <section class="skills views" id="skills">
@@ -429,7 +471,7 @@
 
     <section class="photography view" id="photography">
         <div class="main">
-            <h2 data-value="Photography"><span>P</span>hotograph<span>y</span></h2>
+            <h2 data-value="Photography">Photography</h2>
             <h6 class="photo-text">For the last one is just sum pictures i took.</h6>
         </div>
 
@@ -488,7 +530,7 @@
     <!-- --- end image slider --- -->
             <div class="photography-txt">
                 <div class="txtt">
-                    <h6>If you like these pictures already feel free to check out my <a href="http://instagram.com/leonberkemeier"><span>Instagram</span></a> and my <a href="https://vsco.co/leonberkemeier/gallery"><span>VSCO</span></a> for further pictures. </h6>
+                    <h6>If you like these pictures already feel free to check out my <a href="http://instagram.com/leonberkemeier">Instagram</a> and my <a href="https://vsco.co/leonberkemeier/gallery">VSCO</a> for further pictures. </h6>
                     
                 </div>
             </div>    
@@ -498,8 +540,8 @@
 
     <section class="connect view" id="connect">
         <div class="main">
-            <h2 data-value="Lets Connect"><span>L</span>ets Connec<span>t</span></h2>
-            <h6 class="question-text">If you got any <span>Questions </span> let me know!</h6>
+            <h2 data-value="Lets Connect">Lets Connect</h2>
+            <h6 class="question-text">If you got any Questions let me know!</h6>
        
             <form action="" class="contact-form" id="contact-form">
 
