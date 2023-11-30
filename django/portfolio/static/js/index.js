@@ -26,7 +26,7 @@ if(navClose){
 
 // // MULTITEXT
 let typingEffect = new Typed (".multiText",{
-    strings:["Coder","Leon","Showman","entertainer"],
+    strings:["Coder","Leon","Developer"],
     loop: true,
     typeSpeed: 200,
     backSpeed: 300,
