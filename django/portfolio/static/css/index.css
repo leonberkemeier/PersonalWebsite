@@ -10,7 +10,7 @@
     --body-color: rgb(88, 84, 92);
     --light-white-color: rgb(236, 222, 204);
     /* --nav-color: rgb(53, 47, 96); */
-    --modal-color: rgba(80, 59, 80, 0.95);
+    --modal-color: rgba(170, 95, 230, 0.9);
     --span-color: rgb(232, 229, 229);
 
     --collapsible-color: rgb(70, 70, 70);
@@ -46,7 +46,7 @@
     --sub-header-ff: [] ;
 
     --modal-width: 950px;
-    --modal-height: 580px;
+    --modal-height: 560px;
 
 }
 
@@ -752,6 +752,13 @@ span{
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 10;
     text-align: center;
+
+    background: rgba(129, 0, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(13px);
+    border: 1px solid rgba(190, 142, 241, 0.9);
     
   }
   .modal .h1{
@@ -781,10 +788,19 @@ span{
     color: white;
     background-color: var(--modal-color);
     padding: 50px;
+    padding-top: 20px;
     border-radius: 15px;
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 10;
     text-align: center;
+
+
+    background: rgba(129, 0, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(13px);
+    border: 1px solid rgba(190, 142, 241, 0.9);
   }
   .modal1 p{
     text-align: justify;
@@ -812,6 +828,13 @@ span{
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 10;
     text-align: center;
+
+    background: rgba(129, 0, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(13px);
+    border: 1px solid rgba(190, 142, 241, 0.9);
   }
   .modal2 p{
     text-align: justify;
@@ -843,13 +866,20 @@ span{
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 10;
     text-align: center;
+
+    background: rgba(129, 0, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(13px);
+    border: 1px solid rgba(190, 142, 241, 0.9);
   }
   .close-modal {
     position: absolute;
     top: 1.2rem;
     right: 2rem;
     font-size: 3rem;
-    color: #333;
+    color: red;
     cursor: pointer;
     border: none;
     background: none;
@@ -861,7 +891,7 @@ span{
     top: 1.2rem;
     right: 2rem;
     font-size: 3rem;
-    color: #333;
+    color: red;
     cursor: pointer;
     border: none;
     background: none;
@@ -873,7 +903,7 @@ span{
     top: 1.2rem;
     right: 2rem;
     font-size: 5rem;
-    color: #333;
+    color: red;
     cursor: pointer;
     border: none;
     background: none;
@@ -885,7 +915,7 @@ span{
     top: 1.2rem;
     right: 2rem;
     font-size: 5rem;
-    color: #333;
+    color: red;
     cursor: pointer;
     border: none;
     background: none;
@@ -1036,7 +1066,7 @@ span{
         position: relative;
         display: flex;
         width: 100%;
-        padding: 0 30px;
+        padding: 0 50px;
         justify-content: center;
     }
     /* .me{
@@ -1052,6 +1082,8 @@ span{
     .main h6{
         color: var(--headline-color);
         font-size: 15px;
+        margin: 100px;
+        margin-bottom: 20px;
         margin-top: 30px;
         text-align: justify;
         font-family: var(--sub-header-ff);    
@@ -1099,6 +1131,8 @@ span{
     }
     .projects .content .cols0 ul{
         list-style-type: circle;
+        padding-left: 30px;
+        width: 85%;
     }
     
     .project_list_item{
@@ -1120,7 +1154,7 @@ span{
     .projects .content .cols1 .box{
         position: relative;
         /* padding: 20px 20px; */
-        margin-top: 40px;
+        /* margin-top: 40px; */
         height: 550px;
         box-shadow: 0 10px 10px black;
         border-radius: 5px;
@@ -1875,6 +1909,8 @@ ul{
     font-size: 22px;
     color: var(--title-color);
     text-transform: capitalize;
+    text-align: left;
+    margin-left: 30%;
 }
 .footer-col h4::before{
     content: '';
@@ -1895,6 +1931,8 @@ ul li a{
     color: #bdb6b6;
     text-decoration: none;
     transition: .4s;
+    text-align: left;
+    margin-left: 33%;
 }
 footer ul li a:hover{
     color: var(--title-color);
