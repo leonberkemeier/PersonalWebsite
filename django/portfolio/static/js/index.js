@@ -475,3 +475,19 @@ document.getElementById('btn-gh').addEventListener("mouseover", function() {
   icon.classList.toggle('rotate-icons');
 });
 
+
+
+// alert('stuff')
+// preloader
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader-hidden")
+
+  loader.addEventListener("transionend", () =>{
+      document.body.removeChild("loader");
+  })
+})
+
+// alert('this works')

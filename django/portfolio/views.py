@@ -32,7 +32,7 @@ def loginPage(request):
         
             else:
                 
-                messages.info(request, 'Username OR Password is Incorrect')
+                messages.warning(request, 'Username OR Password is Incorrect')
                 return render(request, 'login.html', context)
 
         context={} 
