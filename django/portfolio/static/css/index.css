@@ -1985,7 +1985,7 @@ footer ul li a:hover{
     align-items: center;
     background-color: #333333;
     transition: opacity 0.75s, visibilty 0.75s;
-    opacity: 1;
+    opacity: .7;
     z-index: 200;
 }
 
@@ -2012,4 +2012,8 @@ footer ul li a:hover{
     to{
         transform: rotate(1turn);
     }
+}
+
+.stop-scroll{
+    overflow: hidden;
 }

@@ -175,6 +175,8 @@ document.querySelector(".connect .main h2").onmouseover = event =>{
 
 // ====== Modals ===========
 // alert('hi');
+const body = document.querySelector('body');
+
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.close-modal');
@@ -183,6 +185,7 @@ const btnsOpenModal = document.querySelectorAll('.show-modal');
 const openModal = function () {
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');
+    body.classList.add('stop-scroll')
   };
 
 const closeModal = function () {
@@ -477,7 +480,7 @@ document.getElementById('btn-gh').addEventListener("mouseover", function() {
 
 
 
-// alert('stuff')
+alert('stuff')  
 // preloader
 
 window.addEventListener("load", () => {
