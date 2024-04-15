@@ -480,7 +480,7 @@ document.getElementById('btn-gh').addEventListener("mouseover", function() {
 
 
 
-alert('stuff')  
+// alert('stuff')  
 // preloader
 
 window.addEventListener("load", () => {
@@ -491,6 +491,35 @@ window.addEventListener("load", () => {
   loader.addEventListener("transionend", () =>{
       document.body.removeChild("loader");
   })
-})
+});
 
-// alert('this works')
+// alert('this works');
+
+
+// auto hide header on scroll
+
+
+let prevScrollpos = window.pageYOffset;
+
+/* Get the header element and it's position */
+let headerDiv = document.querySelector("header");
+let headerBottom = headerDiv.offsetTop + headerDiv.offsetHeight;
+
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+
+  /* if scrolling down, let it scroll out of view as normal */
+  if (prevScrollpos <= currentScrollPos ){
+      headerDiv.classList.remove("fixedToTop");
+      headerDiv.style.top ="-150px";
+  }
+  /* otherwise if we're scrolling up, fix the nav to the top */
+  else{  
+      headerDiv.classList.add("fixedToTop");
+      headerDiv.style.top = "0";
+  }
+
+  prevScrollpos = currentScrollPos;
+}
+
+// alert('hi')

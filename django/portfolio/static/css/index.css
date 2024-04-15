@@ -75,7 +75,7 @@ body{
     background-color: var(--nav-color);
     z-index: var(--z-fixed);
     box-shadow: 0 1px 5px var(--nav-color);
-    opacity: .6;
+    opacity: .8;
     transition: linear .5s;
     /* border-bottom: 1px solid var(--first-color); */
 
