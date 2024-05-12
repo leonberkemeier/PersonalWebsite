@@ -577,7 +577,8 @@ window.addEventListener("load", () => {
   })
 });
 
-// alert('this works');
+
+alert('this works');
 
 
 // auto hide header on scroll

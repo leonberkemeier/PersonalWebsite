@@ -5,9 +5,9 @@ from django.contrib import messages
 
 
 # Create your views here.
-@login_required(login_url='login')
+# @login_required(login_url='login')
 def test(request):
-    return render(request, 'test.html')
+    return render(request, 'first.html')
 
 def home(request):
     return render(request, 'index.html')
