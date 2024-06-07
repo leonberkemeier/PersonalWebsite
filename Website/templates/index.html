@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alles</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+           
+            <div class="nav__logo">
+                <a href="#" class="nav__logo1"><h1 data-value="Leon">Leon</h1></a>
+            </div>
+       
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            home
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            projects                        
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            skills 
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#photography" class="nav__link">
+                            photography                 
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__buttons">
+                    <a href="#connect" class="nav__button-ghost">Lets Connect</a>
+                </div>
+                <!-- closebtn -->
+                <div class="nav__close" id="nav-close">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+            </div>
+            <!-- toggle btn -->
+            <div class="nav__toggle" id="nav-toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+           
+        </nav>
+
+        
+        
+    </header>
+    
+
+   
+
+    <section class="home view" id="home">
+   
+        <div class="highlights">
+
+            <div class="cols cols0" id="cols0">
+                <div class="textbox" id="textbox">
+                    <span class="topline">Hey</span>
+                    <br>
+                    <h1>I'm <span class="multiText">Leon</span></h1>
+                    <br>
+                    <br>
+                    <p> I am currently studying chemistry and chemical engineering and I really like to write some code and take some pictures im my freetime.</p>    
+                </div>
+                
+            </div>
+                       
+            <div class="cols cols1" id="cols1">
+                <div class="imgbox" id="imgbox">
+                    <img class="splash" src="{% static '/img/images/splash3.png' %}" id="splash">
+                    <img class="profile" src="{% static '/img/images/img4.png' %}">
+                    
+                    <!-- splashes -->
+                    <!-- https://www.pngall.com/de/paint-splash-png -->
+                </div>
+            </div>
+            
+            <div class="btns" id="btns">
+                <a target="_blank" rel="noopener noreferrer" href="/"><button>download cV</button></a>            
+                <a href="#connect"><button>lets connect</button></a>
+            </div>
+
+        </div>    
+        
+    <div class="banner"></div>
+       
+    </section>
+
+        <!-- ------- section projects ---------- -->
+
+        <section class="projects view" id="projects">
+            <div class="main">
+                <h2 data-value="My Projects">My Projects</h2>
+                <h6>Here I want to display a list of Projects that I finished. The backend of my projects are all django-based. The frontend usually was made using HTML and CSS. With further projects there was more and more JS used.</h6>
+            </div>
+            <div class="content">
+                
+                <div class="cols0">
+                    <ul class="project__list">
+    
+                        <li class="project_list_item">
+                            <p><b>My</b> first project was a to-do-list. Which was created with python in the framework Django.</p>
+    
+                            
+                            <button class="show-modal">view my first project</button> 
+                        </li>
+    
+                        <li class="project_list_item">
+                            <p><b>The</b> second project was a flash-card-learning web application, whhich allows you to upload flashcards into different projects. Additionally I added a document-scanner using CV2.</p>
+                            <button class="show-modal1">view my second project</button> 
+                        </li>
+                        <!-- <br> -->
+                        <li class="project_list_item">
+                            <p><b>The</b> second project was a flash-card-learning web application, whhich allows you to upload flashcards into different projects. Additionally I added a document-scanner using CV2.</p>
+                            <button class="show-modal2">view my second project</button> 
+                        </li>
+    
+                        <!-- <li class="project_list_item">
+                            <p><b>Third</b> project was a Web-Scraping tool in which I used Scrapy to yield prices and save them frequently into a SQL-Database. If there was change in price an Email was sent to me using EmailJS.</p>
+                            <button class="show-modal2">view my third project</button> 
+                        </li> -->
+    
+                        <li class="project_list_item">
+                            <p><b>Fourth</b> was this personal portfolio website. This project combines all previous projects into one and is supposed to show some frontend skills I picked up along the way.</p>
+                            <button class="show-modal3">view my fourth project</button>  
+                        </li>
+                    </ul>
+    
+                    <!-- <div class="project">
+                        <p><b>M</b>y first project was a basic to-do-list, which was designed to be a Mischung aus shopping und to-do-list.</p>
+                        <a href="#">mehr</a>    
+                    </div>
+    
+                    <div class="project">
+                        <p><b>T</b>he second project was a flash-card-style web application in which you were supposed to be able to create projects and to upload flash-cards ment for learning new skills.</p>
+                        <a href="#">mehr</a>    
+                    </div> -->
+    
+                </div>
+                <div class="cols1">
+                    <div class="box">
+                        
+                        <img src="{% static '/img/images/img99.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="modal hidden">
+                <button class="close-modal">&times;</button>
+                <h1>TaskMaker</h1>
+                <img src="{% static '/img/projects/list.png' %}" alt="">
+                <p>
+                  The backend for was created with the framework django. This project is a simple to-do-list to which you can add, check and remove tasks.
+                </p>
+                <br>
+                <a href="/login">to the project</a>
+              </div>
+        
+            <div class="modal1 hidden">
+              <button class="close-modal1">&times;</button>
+              <h1>IndexMaster</h1>
+              
+              <div class="cardscontainer">
+                <input type="radio" name="slide" id="c1" checked>
+                <label for="c1" class="card">
+                    <div class="row">
+                        <div class="icon">
+                            1
+                        </div>
+                        <div class="description">
+                            <!-- <h4>Projects</h4> -->
+                            <!-- <p> has so much to offer creative activities</p> -->
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c2">
+                <label for="c2" class="card">
+                    <div class="row">
+                        <div class="icon">
+                            2
+                        </div>
+                        <div class="description">
+                            <!-- <h4>Index Cards</h4> -->
+                            <!-- <p> has so much to offer creative activities</p> -->
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c3">
+                <label for="c3" class="card">
+                    <div class="row">
+                        <div class="icon">
+                            3
+                        </div>
+                        <div class="description">
+                            <!-- <h4>Index Card</h4> -->
+                            <!-- <p> has so much to offer creative activities</p> -->
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c4">
+                <!-- <label for="c4" class="card">
+                    <div class="row">
+                        <div class="icon">
+                            4
+                        </div>
+                        <div class="description">
+                            <h4>Winter</h4>
+                            <p> has so much to offer creative activities</p>
+                        </div>
+                    </div>
+                </label> -->
+            </div>
+            <p>
+                My second project was an index card app. In the App the User can create his individual Projects and add index cards to the particular projects.
+              </p>
+            
+              <a href="/login">link to project</a>
+            </div>
+            <div class="modal2 hidden">
+              <button class="close-modal2">&times;</button>
+              <h1>Tracker</h1>
+              <img src="{% static '/img/projects/scraper.png'%}" alt="">
+              <p>
+                With the framework <a href="https://scrapy.org/">Scrapy</a> I created a program that has the ability to scrape special internet sites for prices. Using the <a href="https://de.wikipedia.org/wiki/Cron">Cron-Daemon</a> I frequently scraped the prices of chosen Items and saved them into a SQL-Database. As soon as there was a drop in more than 20% there was an Email sent to my account notifying me about the new prices.
+              </p>
+              
+              <a href="/login">link to project</a>
+            </div>
+            <div class="modal3 hidden">
+              <button class="close-modal3">&times;</button>
+              <h1>This is Project 3</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>  
+        
+            <div class="overlay hidden"></div>
+        </section>
+    <!-- ---- section skills ---- -->
+
+    <section class="skills views" id="skills">
+        
+        <div class="main">
+            <h2 data-value="My Skills">My Skills</h2>
+            <h6>Here I want to show <span>you</span> some <span>Skills</span> I aquired over time and some <span>courses</span> I took.</h6>
+        </div>
+
+        <div class="progressBoxs grid">
+<!-- skills -->
+            <div class="grid_skills" id="grid_skills">
+
+                <h1>Skills</h1>
+                
+                <div class="skillsItem">
+                    <button type="button" class="collapsible" id="the-button0">
+                        <div class="progress_name">
+                            <span>HTML</span>
+                            <span>90% <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+    
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 90%;"></div>
+                        </div>
+                    </button>
+                    
+                    <div class="content">
+                        <h4><p> HTML is the fundamental language for building web pages. Using tags, it creates the structure and content of websites, defining elements like text, images, and links.</p></h4>
+                        <p> I've used HTML to build web pages, creating content and organizing information using its tags. It's been instrumental in crafting user-friendly and responsive online interfaces. </p>
+                    </div>
+                </div>
+                
+                <div class="skillsItem">
+                    <button type="button" class="collapsible" id="the-button1">
+                        <div class="progress_name">
+                            <span>CSS</span>
+                            <span>80% <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+    
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 80%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4><p>CSS styles web pages by defining the appearance and layout of HTML elements on websites.</p></h4>
+                        <p>CSS has enabled me to enhance the look and layout of websites by defining styles for HTML elements. It's given me the tools to create visually appealing web pages across different devices and experiment with various design approaches to improve user experiences.</p>
+                    </div>
+                </div>
+                
+                <div class="skillsItem">
+                    <button type="button" class="collapsible" id="the-button2">
+                        <div class="progress_name">
+                            <span>SQLite</span>
+                            <span>40% <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+    
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 40%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4><p>SQLite is a compact and efficient database system often used in embedded applications due to its simplicity and ease of integration.</p></h4>
+                        <p>I've used SQLite for managing data in different projects, benefiting from its lightweight nature and seamless integration within applications, making data management efficient without requiring a separate server.</p>
+                    </div>
+    
+                </div>
+                
+                <div class="skillsItem">
+                    <button type="button" class="collapsible" id="the-button3">
+                        <div class="progress_name">
+                            <span>Python</span>
+                            <span>75% <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+    
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 74%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4><p>Python is a versatile, high-level programming language known for its simplicity, readability, and vast application across various domains such as web development, data analysis, artificial intelligence, and automation.</p></h4>
+                        <p>My experience with Python has been incredibly rewarding. This versatile language has empowered me to work across diverse domains, from web development to data analysis and machine learning. Python's extensive libraries and readability have made it an ideal choice for solving complex problems efficiently. Its flexibility and wide-ranging applications have allowed me to craft robust solutions, automate tasks, and develop sophisticated algorithms.</p>
+                    </div>
+                </div>
+                
+                <div class="skillsItem">
+                    <button type="button" class="collapsible" id="the-button4">
+                        <div class="progress_name">
+                            <span>JavaScript</span>
+                            <span>10% <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+    
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 10%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4><p>JavaScript is a versatile programming language primarily used for web development, allowing for dynamic and interactive elements on websites, enhancing user experiences across various browsers.</p></h4>
+                        <p>JavaScript has enabled me to create dynamic and interactive elements on web pages, enhancing user experiences through responsive applications and seamless interactions, utilizing its versatile libraries and frameworks.(also have a look in courses to see my finished 70h JavaScript course/login)</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+<!-- courses -->
+            <div class="grid_courses">
+
+                <h1>Courses</h1>
+
+                <div class="courseItem">
+                    <button type="button" class="collapsible" id="the-button5">
+                        <div class="progress_name">
+                            <span>The Complete JavaScript Course 2023!</span>
+                            <span>35% <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+    
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 40%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4>The modern JavaScript course for everyone!</h4>
+                        <p> Master JavaScript with projects, challenges and theory. Many courses in one!</p>
+                        <p>Level: All Level</p>
+                        <p>Video: 68.5 h</p>
+                    </div>
+                </div>
+
+
+                <div class="courseItem">
+                    <button type="button" class="collapsible" id="the-button6">
+                        <div class="progress_name">
+                            <span>Beginning C++ Programming</span>
+                            <span>10% <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+    
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 10%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4>Which programming language is often seen as a badge of honor among software developers? <br> C++</h4>
+                        <p>Obtain Modern C++ Object-Oriented Programming (OOP) and STL skills. C++14 and C++17 covered. C++20 info see below.</p>
+                        <p>Level: All Level</p>
+                        <p>Video: 46 h</p>
+                    </div>
+                </div>
+
+                
+                <div class="courseItem">
+                    <button type="button" class="collapsible" id="the-button7">
+                        <div class="progress_name">
+                            <span>Full Ethical Hacking Course</span>
+                            <span>100%  <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 98%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4>Learn all about ethical hacking and penetration testing.</h4>
+                        <p>Video: 15h</p>
+                        <a href="../../FullEthicalHackingCourseI.pdf"></a>
+                    </div>
+                </div>
+                
+                <div class="courseItem">
+                    <button type="button" class="collapsible" id="the-button8">
+                        <div class="progress_name">
+                            <span>Learn Ethical Hacking From Scratch</span>
+                            <span>12%  <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon></span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 12%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4>Become an ethical hacker that can hack computer systems like black hat hackers and secure them like security experts</h4>
+                        <p>Video: 16 h</p>
+                    </div>
+                </div>
+
+                
+                <div class="courseItem">
+                    <button type="button" class="collapsible" id="the-button9">
+                        <div class="progress_name">
+                            <span>Full Web Ethical Hacking Course</span>
+                            <span>75%  <ion-icon class="chevron-down"  name="chevron-down-outline"></ion-icon></span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress_bar" style="width: 76%;"></div>
+                        </div>
+                    </button>
+    
+                    <div class="content">
+                        <h4>Full Web Ethical Hacking Course</h4>
+                        <p>Learn all about web application penetration testing!</p>
+                    </div>
+                </div>
+                
+            </div>            
+        </div>
+
+        <div class="banner2"></div>
+    </section>
+
+
+
+<!-- ==== section Photography ==== -->
+
+    <section class="photography view" id="photography">
+        <div class="main">
+            <h2 data-value="Photography">Photography</h2>
+            <h6 class="photo-text">For the last one is just sum pictures i took.</h6>
+        </div>
+
+         <!-- --- start image slider OLD --- -->
+         <!-- <div class="photography-container">
+
+                <div class="slider">
+                    <div class="slides">
+                        
+                        <input type="radio" name="radio-btn" value="" id="radio1">
+                        <input type="radio" name="radio-btn" value="" id="radio2">
+                        <input type="radio" name="radio-btn" value="" id="radio3">
+                        <input type="radio" name="radio-btn" value="" id="radio4">
+                        <input type="radio" name="radio-btn" value="" id="radio5">
+                        
+                        <div class="slide first">
+                            <img src="{% static 'img/images/1.jpg'%}" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="{% static 'img/images/2.jpg'%}" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="{% static 'img/images/3.jpg'%}" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="{% static 'img/images/4.jpg'%}" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="{% static 'img/images/5.jpg'%}" alt="">
+                        </div>
+                       
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
+                        </div>
+                        
+                    </div>
+                   
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                    </div>
+
+                   
+                </div>
+            </div> -->
+
+            <!-- IMAGE SLIDER NEW -->
+            <div class="slider">
+                <!-- list items -->
+                <div class="list">
+                    <div id="img1" class="item active">
+                        <!-- <img src="images/16.jpg" alt=""> -->
+                        <img src="/static/img/images/slider/16.jpg" alt="">
+                        <div class="content">
+                            <h2>leon.berkemeier</h2>
+                        </div>
+                    </div>
+                    <div id="img2" class="item">
+                        <!-- <img src="images/12.JPG" alt=""> -->
+                        <img src="/static/img/images/slider/12.JPG" alt="">
+                        <div class="content">
+                            <h2>leon.berkemeier</h2>
+                        </div>
+                    </div>
+                    <div id="img3" class="item">
+                        <!-- <img src="images/19.jpg" alt=""> -->
+                        <img src="/static/img/images/slider/19.jpg" alt="">
+                        <div class="content">
+                            <h2>leon.berkemeier</h2>
+                        </div>
+                    </div>
+                    
+                    <div id="img5" class="item">
+                        <!-- <img src="images/8.JPG" alt=""> -->
+                        <img src="/static/img/images/slider/8.JPG" alt="">
+                        <div class="content">
+                            <h2>leon.berkemeier</h2>
+                        </div>
+                    </div>
+                    <div id="img4" class="item">
+                        <!-- <img src="images/7.JPG" alt=""> -->
+                        <img src="/static/img/images/slider/7.JPG" alt="">
+                        <div class="content">
+                            <h2>leon.berkemeier</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- arrows -->
+                <div class="arrows">
+                    <button class="prev" id="prev"><</button>
+                    <button class="next" id="next">></button>
+                </div>
+                <!-- thumbnail -->
+                <div class="thumbnail">
+                    
+                    <div class="item active">
+                        <!-- <img src="images/16.jpg"> -->
+                        <img src="/static/img/images/slider/16.jpg" alt="">
+                        <div class="content">
+                            <!-- Name Slider -->
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <!-- <img src="images/12.JPG"> -->
+                        <img src="/static/img/images/slider/12.JPG" alt="">
+                        <div class="content">
+                            <!-- Name Slider -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!-- <img src="images/19.jpg"> -->
+                        <img src="/static/img/images/slider/19.jpg" alt="">
+                        <div class="content">
+                            <!-- Name Slider -->
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <!-- <img src="images/8.JPG"> -->
+                        <img src="/static/img/images/slider/8.JPG" alt="">
+                        <div class="content">
+                            <!-- Name Slider -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!-- <img src="images/7.JPG"> -->
+                        <img src="/static/img/images/slider/7.JPG" alt="">
+                        <div class="content">
+                            <!-- Name Slider -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+    <!-- --- end image slider --- -->
+            <div class="photography-txt">
+                <div class="txtt">
+                    <h6>If you like these pictures already feel free to check out my <a href="http://instagram.com/leonberkemeier">Instagram</a> and my <a href="https://vsco.co/leonberkemeier/gallery">VSCO</a> for further pictures. </h6>
+                    
+                </div>
+            </div>    
+    </section>
+
+    <!-- section contact formular -->
+
+    <section class="connect view" id="connect">
+        <div class="main">
+            <h2 data-value="Lets Connect">Lets Connect</h2>
+            <h6 class="question-text">If you got any Questions let me know!</h6>
+       
+            <form action="" class="contact-form" id="contact-form">
+
+                <input type="text" placeholder="Your name" class="name" required>
+                <input type="email" name="" id="" placeholder="Email" class="email" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write me a message ;)" class="message" required></textarea>
+                <input type="submit" value="Send" class="send-btn">
+    
+            </form>
+        </div>
+    </section>
+
+    <!-- icons -->
+
+    <div class="icons">
+        <i id="btn-vsco" class="fa fa-vsco"><ion-icon class="button-icon" name="camera-outline"></ion-icon><a class="icon-link" target="_blank" rel="noopener noreferrer" href="https://vsco.co/leonberkemeier/gallery">VSCO</a></i>
+        <i id="btn-insta" class="fa fa-insta"><ion-icon class="button-icon" name="logo-instagram"></ion-icon><a class="icon-link" target="_blank" rel="noopener noreferrer" href="https://instagram.com/leonberkemeier/">Instagram</a></i>
+        <i id="btn-li" class="fa fa-linkedin"><ion-icon class="button-icon" name="logo-linkedin"></ion-icon><a class="icon-link" href="./">LinkedIn</a></i>
+        <i id="btn-gh" class="fa fa-github"><ion-icon class="button-icon" name="logo-github"></ion-icon><a class="icon-link" target="_blank" rel="noopener noreferrer" href="https://github.com/leonberkemeier">GitHub</a></i>
+    </div>
+
+    <!-- loader -->
+    
+    <div class="loader">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-col">
+            <h4>Projects</h4>
+            <ul>
+                <li><a href="#">ToDoList</a></li>
+                <li><a href="#">FlashCards</a></li>
+                <li><a href="#">DocumentScanner</a></li>
+                <li><a href="#">WebScraper</a></li>
+
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>network</h4>
+            <ul>
+                <li><a href="#">technology</a></li>
+                <li><a href="#">science</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">API</a></li>
+
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Me</h4>
+            <ul>
+                <li><a href="#">about</a></li>
+                <li><a href="#">legal</a></li>
+                <li><a href="#">contact</a></li>
+
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow me</h4>
+            <div class="links">
+                <a target="_blank" rel="noopener noreferrer" href="https://vsco.co/leonberkemeier/gallery" target="_blank" rel="noopener noreferrer"><ion-icon name="camera-outline"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/leonberkemeier"><ion-icon name="logo-github"></ion-icon></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/leonberkemeier/"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+            
+        </div>
+    </footer>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script defer src="./script.js" type="text/javascript"></script>
+
+    <!-- scripts for contact -->
+    <script defer src="script.js"></script>
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- email js link -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+        emailjs.init('Uc6RlC0v1cy7zI6s5')
+        </script>
+        <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

@@ -19,7 +19,7 @@ body h1{
 }
 h1:hover{
     background: rgb(186, 186, 187);
-    transition: .3s;
+    transition: 0.5s;
 }
 
 .nav__logo{

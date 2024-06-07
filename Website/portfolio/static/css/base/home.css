@@ -1,0 +1,391 @@
+
+
+
+/* first section */
+
+/* ----- HOME SECTION ------- */
+
+.view{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+
+}
+.views{
+    background-color: var(--nav-color);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+}
+
+.home{
+    display: flex;
+    height: 105vh;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 82% 95%,0 100%);
+}
+/* clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 95%,0 100%); */
+.banner{
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    background: url('../../img/images/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    display: flex;
+}
+.highlights{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.highlights h1{
+    font-size: 5vw;
+    text-align: center; 
+    font-weight: normal;
+    font-weight: 500;
+}
+.highlights .topline{
+    color: var(--headline-color);
+}
+.highlights p{
+    color: var(--white-color);
+    text-align: justify;
+    font-size: var(--normal-font-size);
+}
+.highlights b{
+    color: var(--headline-color);
+}
+
+.multiText{
+    color: var(--purple-color);
+    text-transform: capitalize;
+
+}
+
+
+
+
+
+/* --------- home ----------- */
+
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.cols{
+    width: 50%;
+}
+/* .cols0{
+    margin-top: 400px;
+    margin-left: 5%;
+} */
+.cols .cols0{
+    top: 400px;
+}
+.cols .cols1{
+    margin-right: 0;
+}
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: var(--text-color);
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: var(--pink-color);
+}
+
+.multiText{
+    color: var(--purple-color);
+    text-transform: capitalize;
+
+}
+.btns{
+    width: 430px;
+    position: fixed;
+    left: calc(50% - 215px);
+    /* left: 50px; */
+    bottom: 20px;
+
+}
+.home button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    background-color: rgb(61, 83, 95,.8);
+    padding: 8px 14px;
+    margin: 50px 5px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    text-transform:capitalize;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.5);
+
+}
+.home .highlights .btns button:hover{
+    background-color: var(--purple-color);
+    transition: 1s;
+
+
+}
+.textbox{
+    position: relative;
+    left: 10%;
+    top: 30%;
+    z-index: 111;
+    
+}
+.imgbox{
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    right: 10%;
+}
+.imgbox img{
+    position: relative;
+    height: 100%;
+    width: 300px;
+    top: 10%;
+    right: 2%;
+    /* border: 10px solid var(--body-color);
+    border-radius: 20px; */
+    /* filter: brightness(140%); */
+    /* border-radius: 50%; */
+    
+}  
+
+
+
+
+
+
+
+
+
+
+
+.columns {
+    display: flex;
+    justify-content: center;
+    
+    height: 80vh;
+    width: 100vw;
+    padding: 10px 10px;
+}
+.column1{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.column2{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin-right: 10%;
+    
+    
+}
+
+.profilepic{
+    position: relative;
+    height: 100%;
+    /* width: 300px; */
+    border: 1px solid var(--body-color);
+    border-radius: 15px;
+    box-shadow: 0 10px 10px black;
+    border-radius: 15px;
+    transform: 
+        perspective(5000px)
+        rotateX(var(--rotateX))
+        rotateY(var(--rotateY))
+    ;
+
+    /* clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%); */
+    
+    
+    
+        
+}   
+.textbox{
+    width: 480px;
+}
+
+.textbox{
+    position: relative;
+    left: -10%;
+    z-index: 111;
+    
+}
+
+.textbox h1{
+    font-size: 60px;
+    text-align: left;
+}
+
+@media screen and (max-width:1500px){
+
+    .column1{
+        width: 50%;
+    }
+    .column2{
+        width: 50%;
+        margin-right: 0;
+    }
+    .textbox{
+        left: 0;
+    }
+    
+}
+@media screen and (max-width:1000px){
+    
+    .column1{
+        width: 50%;
+    }
+    .column2{
+        width: 50%;
+    }
+    .textbox{
+        position: absolute;
+        width: 350px;
+        left: calc(50% - 175px);
+        top: 55%;
+        
+    }
+    .textbox h1{
+        font-size: 40px;
+    }
+    .profilepic{
+        position: absolute;
+        left: calc(50% - 237px);
+        top: 0;
+    }
+}
+
+
+@media screen and (max-width:900px){
+    .cols1{
+        margin-top:20%;
+
+    }
+    .textbox{
+        top: 55%;
+        
+        width: 300px;
+    }
+    .textbox h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .cols1{
+        margin-top: 30%;
+
+    }
+    .cols0{
+        margin-top: 0px;
+    }
+    
+}
+@media screen and (max-width:700px){
+    .highlights{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    .cols1{
+        margin-top: 50px;
+    }
+
+    .home button{
+        font-size: 20px;
+    }
+    .btns{
+        left: calc(50% - 184px);
+    }
+    .cols0{
+        margin-left: 0px;
+    }
+    
+    .textbox{
+        
+        
+        width: 250px;
+    }
+    .imgbox img{
+        width: calc(175% - 80px);
+        right: -50px;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width:600px){
+    .textbox{
+        width: 400px;
+        left: calc(50% - 200px);
+    }
+   
+}
+
+
+
+@media screen and (max-width:450px){
+    .highlights{
+        top: 8vh;
+    }
+    .textbox{
+        width: 380px;
+        left: calc(50% - 180px);
+    }
+    .cols0{
+        margin-top: 100px;
+    }
+    .cols1{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:390px){
+    .textbox{
+        width: 340px;
+        left: calc(50% - 170px);
+    }
+    .highlights{
+        top: 8vh;
+    }
+    .home button{
+        font-size: 15px;
+    }
+    .btns{
+        left: calc(50% - 154px);
+    }
+}

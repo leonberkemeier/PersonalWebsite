@@ -1,0 +1,40 @@
+
+
+
+
+body{
+    background-color: rgb(40,34,40);
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* .card{
+    height: 300px;
+    width: 200px;
+    border: 1px solid black;
+    transform: 
+        perspective(5000px)
+        rotateX(20deg)
+        rotateY(20deg)
+
+    ;
+} */
+.card{
+    height: 300px;
+    width: 200px;
+    border: 1px solid black;
+    transform: 
+        perspective(5000px)
+        rotateX(var(--rotateX))
+        rotateY(var(--rotateY))
+    ;
+    border-radius: 10px;
+    background-color: grey;
+    opacity: .4;
+}
+
+
+.card h1 {
+    font-size: 20px;
+}

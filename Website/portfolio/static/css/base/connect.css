@@ -1,0 +1,124 @@
+
+
+/* ====== contact form ========== */
+    /* .message{
+        background: blue;
+    }
+    .name{
+        color: black;
+    } */
+    .contact-form{
+        max-width: 600px;
+        margin: auto;
+        margin-top: 20px;
+        width: 100%;
+        display: grid;
+        row-gap: 1rem;
+    }
+    .contact-form input,.contact-form textarea{
+        border: none;
+        outline: none;
+        font-size: .9rem;
+        padding: 15px;
+        color: var(--nav-color);
+        background: rgb(30, 26, 39);
+        border-radius: .4rem;
+        color: white;
+    
+    }
+    .connect .main .question-text{
+        text-align: center;
+    }
+    .main .contact-form .send-btn{
+        width: 120px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        color: var(--nav-color);
+        font-weight: 500;
+        background: var(--purple-color);
+        color: var(--nav-color);
+        cursor: pointer;
+    
+    }
+    .send-btn{
+        width: 120px;
+        background:blue;
+        cursor: pointer;
+    }
+    .contact-form .send-btn:hover{
+        background: var(--lighter-color);
+        color: black;
+        transition: .3s all linear;
+    }    
+
+    @media screen and (max-width:700px){
+        .contact-form{
+          max-width: 500px;
+        }
+    }
+    @media screen and (max-width:600px){
+        .contact-form{
+          max-width: 400px;
+        }
+    }
+    @media screen and (max-width:500px){
+        .contact-form{
+          max-width: 350px;
+        }
+    }
+
+    /* ====== css for icons ========= */
+
+    /*------------- icons --------------- */
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    right: -16.9vw;
+    transform: translateY(-50%);
+    color: var(--white-color);
+    /* transition: color 2s; */
+    
+}
+.icon-link{
+    color: rgb(202, 197, 197);
+    text-decoration: none;
+    margin: 20px;
+    /* background: blue; */
+}
+.icons .fa{
+    width: 20vw;
+    padding: 1vw;
+    font-size: 2.0vw;
+    cursor: pointer;
+    background: var(--blue-color);
+    transition: .5s ease;
+    margin: .5vw;
+    border-radius: 1.5vw;
+    border: 1px solid var(--text-color);
+    opacity: .7;
+}
+.icons .fa:hover,
+.icon-link:hover{
+    color: #fff;
+    opacity: 1;
+    background: var(--purple-color);
+    transform: translateX(-13vw);
+    /* background: rgb(127, 0, 255); */
+    /* background-color: blue; */
+    /* transition: color 2s; */
+
+    
+    
+}
+
+.icons .fa span{
+    position: relative;
+    font-size: 1.8vw;
+    bottom: 1.2vw;
+    margin-left: 1.8vw;
+    margin-top: 1.5vw;
+    
+}

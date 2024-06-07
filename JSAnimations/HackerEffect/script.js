@@ -24,11 +24,11 @@ document.querySelector("h1").onmouseover = event =>{
     }
 
     iteration += 1/3;
-    }, 20);
+    }, 60);
     
 }
 
-document.querySelector(".nav__logo h1").onmouseover = event =>{
+document.querySelector(".nav__logo1 h1").onmouseover = event =>{
     let iteration = 0;
 
     clearInterval(interval);

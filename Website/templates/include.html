@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASE</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <section>
+        <h1>block 1</h1>
+        {% include "first.html" %}
+    </section>
+    <section>
+        <h1>block 2</h1>
+        {% include "second.html" %}
+    </section>
+</body>
+</html>
